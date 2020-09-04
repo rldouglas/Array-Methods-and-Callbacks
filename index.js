@@ -10,8 +10,8 @@ console.log('its working');
 
 (a) Home Team name for 2014 world cup final   //Brazil//
 (b) Away Team name for 2014 world cup final   //Netherlands//
-(c) Home Team goals for 2014 world cup final  
-(d) Away Team goals for 2014 world cup final
+(c) Home Team goals for 2014 world cup final  //
+(d) Away Team goals for 2014 world cup final //
 (e) Winner of 2014 world cup final */          //Germany//
 
 
