@@ -15,10 +15,12 @@ console.log('its working');
 (e) Winner of 2014 world cup final */          //Germany//
 
 
-const awayTeam = (fifaData,[3]);
-
-console.log(fifaData[3].Year);
-
+const awayTeam = (fifaData,[851]);
+console.log(fifaData[850]["Home Team Name"])
+console.log(fifaData[850]["Away Team Name"])
+console.log(fifaData[850]["Home Team Goals"])
+console.log(fifaData[850]["Away Team Goals"]);
+console.log(fifaData[848]["Away Team Name"])
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
@@ -37,7 +39,7 @@ function getFinals(fifaData) {
 /* Task 3: Implement a higher-order function called `getYears` that accepts the callback function `getFinals`, and returns an array called `years` containing all of the years in the dataset */
 
 //function getYears(callback) {
-    function getYears(callback, data) {
+   /* function getYears(callback, data) {
         let years = [];
        callback(data).map(object => {
         years.push(object.Year);
@@ -50,13 +52,19 @@ function getFinals(fifaData) {
 
 /* Task 4: Implement a higher-order function called `getWinners`, that accepts the callback function `getFinals()` and determine the winner (home or away) of each `finals` game. Return the name of all winning countries in an array called `winners` */ 
 
-function getWinners(getFinal) {
+ /*function getWinners(callback) {
+    let winners = []
 
+    callback.forEach(function (callback)
+      
+        }
+  
+      console.log(getWinners(getFinals(fifaData)))
     /* code here */
 
-};
 
-getWinners();
+
+
 
 /* Task 5: Implement a higher-order function called `getWinnersByYear` that accepts the following parameters and returns a set of strings "In {year}, {country} won the world cup!" 
 
@@ -65,8 +73,15 @@ Parameters:
  * callback function getYears
  */
 
-function getWinnersByYear(/* code here */) {
+/*function getWinnersByYear(callback1) {
 
+    let winners = getWinners(fifaData)
+    console.log(winners)
+
+    fifaData.forEach(function(callback){
+        console.log('In ${callback1.Year}), $(getWinners(fifaData)
+        [0]} 
+    }
 };
 
 getWinnersByYear();
