@@ -14,19 +14,19 @@ console.log('its working');
 (d) Away Team goals for 2014 world cup final //
 (e) Winner of 2014 world cup final */          //Germany//
 
-const homeTeam = (2014);
-const awayTeam = (2014);
 
-console.log(fifaData, homeTeam)
-console.log(fifaData, awayTeam)
+const awayTeam = (fifaData,[3]);
+
+console.log(fifaData[3].Year);
+
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 
 //function getFinals(data, finals) {
 
-function getFinals(data) {
-    const finals = data.filter(final => (final["stage"] == "Final"))
+function getFinals(fifaData) {
+    const finals = fifaData.filter(final => (final["Stage"] === "Final"))
     return finals;
     };
 
